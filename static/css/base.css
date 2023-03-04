@@ -14,5 +14,17 @@ img {
 }
 
 body {
-    background-color: brown;
+    background-color: white;
+}
+
+.masthead {
+    background-color: RGBA(108, 117, 125, .5);
+    background-image: url('../masthead.jpg') !important;
+    height: 60vh;
+    width: 100vw;
+}
+
+#hook {
+    margin-top: 15rem;
+    padding-bottom: 3rem;
 }
