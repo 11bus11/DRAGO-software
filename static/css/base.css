@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 nav {
     background-color: white;
     height: 10vh;
@@ -27,4 +31,8 @@ body {
 #hook {
     margin-top: 15rem;
     padding-bottom: 3rem;
+}
+
+.container-fluid {
+    --bs-gutter-x: 0rem;
 }

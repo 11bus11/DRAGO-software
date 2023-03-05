@@ -26,3 +26,15 @@ def home(request):
     }
 
     return render(request, template, context)
+
+
+def about(request):
+    """ See all services available """
+    services = Services.objects.all()
+
+    template = "dragoSoftware/about-us.html"
+    context = {
+        'services': services,
+    }
+
+    return render(request, template, context)
