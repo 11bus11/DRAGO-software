@@ -12,5 +12,10 @@ class Services(models.Model):
 
 
 class AboutUs(models.Model):
+    nr = models.IntegerField(null=False, blank=False, default=0)
     title = models.CharField(max_length=254, null=False, blank=False)
     content = models.CharField(max_length=2000, null=False, blank=False, default="To be added")
+    image = models.CharField(max_length=254, null=True, blank=True)
+
+    def __str__(self):
+        return self.title
