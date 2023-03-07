@@ -2,6 +2,10 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    margin-top: 20vh;
+}
+
 .back-image {
     position: fixed;
     width: 100vw;
@@ -12,6 +16,10 @@ html {
 
 p, h1, h2, h3, h4, a {
     font-family: 'League Spartan', sans-serif;
+}
+
+h2 {
+    padding-top: 10px;
 }
 
 .navbar {
@@ -28,6 +36,10 @@ p, h1, h2, h3, h4, a {
     margin: 0%;
     width: 100vw;
     z-index: 5;
+}
+
+#service {
+    padding-top: 10vh;
 }
 
 .container {
@@ -51,7 +63,7 @@ footer {
 #hook-container {
     background-color: RGBA(108, 117, 125, 0);
     object-fit: contain;
-    min-height: 100vh;
+    min-height: 90vh;
     max-width: 100vw !important;
     padding-top: 40vh;
 }
