@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block content %}
+
+<div class="card col-11 col-lg-8 row justify-content-around">
+    <div class="card-title">
+        <h2 class="mt-4 text-center">{% trans "Sign In" %}</h2>
+    </div>
+    <div class="card-body">
+        {% get_providers as socialaccount_providers %}
+
+        {% if socialaccount_providers %}
+        <p class="text-center">{% blocktrans with site.name as site_name %}Please sign in with one
+        of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
+        for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
+
+        <div class="socialaccount_ballot">
+
+        <ul class="socialaccount_providers">
+            {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+        </ul>
+
+        <div class="login-or">{% trans 'or' %}</div>
+
+        </div>
+
+        {% include "socialaccount/snippets/login_extra.html" %}
+
+        {% else %}
+        <p class="text-center">{% blocktrans %}If you have not created an account yet, then please
+        <a class="text-center" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+        {% endif %}
+        
+        <div class="col-6">
+            <form class="login text-center" method="POST" action="{% url 'account_login' %}">
+                {% csrf_token %}
+                {{ form }}
+                {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                {% endif %}
+                <button class="primaryAction btn btn-success text-uppercase mt-3" type="submit">{% trans "Sign In" %}</button>
+            </form>
+        </div>
+    </div>
+    
+</div>
+
+{% endblock %}
