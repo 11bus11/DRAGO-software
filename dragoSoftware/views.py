@@ -6,11 +6,11 @@ from .models import Services
 
 def services(request):
     """ See all services available """
-    services = Services.objects.all()
+    our_services = Services.objects.all()
 
     template = "dragoSoftware/services.html"
     context = {
-        'services': services,
+        'our_services': our_services,
     }
 
     return render(request, template, context)

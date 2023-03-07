@@ -18,13 +18,14 @@
     <!--Services-->
     <section id="services">
         <div class="container container-content col-12 position-relative px-4 px-lg-5 mx-auto">
+            {% for services in services %}
             <div class="container col-12 position-relative px-4 px-lg-5 mx-auto">
-                <h2 class="card-title text-center">Tjänst</h2>
-                <p>
-
-                </p>
-                <img class="card-image" src="https://i.ibb.co/6B2tsZP/logo.png" alt="logo" border="0">
+                <img src="{{ services.image}}" alt="{{ services.name }} icon">
+                <h3 class="card-title text-center">{{ services.name }}</h3>
+                <p class="text-center">{{ services.description }}</p>
+                <h4 class="text-center">Från {{ services.price }} kr</h4>
             </div>
+            {% endfor %}
         </div>  
     </section>
     
