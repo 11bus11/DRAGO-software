@@ -83,11 +83,16 @@ main {
 
 .card-image {
     background-color: white;
-    border-radius: 5%;
-    width: 10vw;
+    border-radius: 2%;
+    width: 20vw;
     height: fit-content;
     margin-left: 40%;
     margin-right: 40%;
+}
+
+.about-image {
+    justify-content: center;
+    align-items: center;
 }
 
 .container-content {
@@ -99,7 +104,8 @@ main {
     align-items: center;
 }
 
-.service-cont {
+.service-cont, .about-cont {
     background-color: RGBA(255, 255, 255, .4);
     border-radius: 2%;
+    margin-bottom: 2rem;
 }

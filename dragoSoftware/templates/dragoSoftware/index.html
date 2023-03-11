@@ -22,11 +22,10 @@
         <div class="container-content col-12 position-relative px-4 px-lg-5 mx-auto card-deck row justify-content-around d-flex d-flex-inline">
             <h2 id="service" class="text-center mb-3">Våra tjänster</h2>
             {% for services in services %}
-            <div class="container service-cont col-md-5 col-sm-11 position-relative px-4 px-lg-5 mx-auto">
+            <div class="container service-cont col-lg-3 col-md-5 col-sm-11 position-relative px-4 px-lg-5 mx-auto">
                 <div class="d-flex d-flex-inline service-icon mt-3">
                     <i class="{{ services.image }} fa-6x"></i>
                 </div>
-                
                 <h3 class="card-title text-center mt-3">{{ services.name }}</h3>
                 <p class="text-center">{{ services.description }}</p>
                 <h4 class="text-center">Från {{ services.price }} kr</h4>
@@ -38,14 +37,16 @@
     <!--About-->
     <section id="about">
         <div class="container container-content col-12 position-relative px-4 px-lg-5 mx-auto">
-            <div class="container col-12 position-relative px-4 px-lg-5 mx-auto">
-                <h2 class="card-title text-center">Om företaget</h2>
-                <p>
-
-                </p>
-                <img class="card-image" src="https://i.ibb.co/6B2tsZP/logo.png" alt="logo" border="0">
+            {% for about in abouts %}
+            <div class="container about-cont col-11 col-md-5 position-relative px-4 px-lg-5 mx-auto">
+                <h2 class="card-title text-center">{{ about.title }}</h2>
+                <p>{{ about.content }}</p>
+                <div class="d-flex d-flex-inline about-image mt-3">
+                    <img class="card-image mb-3" src="{{ about.image }}" alt="{{ about.title }} image" border="0">
+                </div>
+                
             </div>
-
+            {% endfor %}
             <div class="">
                 <h2 class="card-title text-center">Kontakt</h2>
                 <p>
