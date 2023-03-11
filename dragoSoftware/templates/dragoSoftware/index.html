@@ -35,14 +35,15 @@
     </section>
     
     <!--About-->
-    <section id="about">
+    <section>
         <div class="container container-content col-12 position-relative px-4 px-lg-5 mx-auto">
+            <h2 id="about" class="text-center">Om oss</h2>
             {% for about in abouts %}
             <div class="container about-cont col-11 col-md-5 position-relative px-4 px-lg-5 mx-auto">
                 <h2 class="card-title text-center">{{ about.title }}</h2>
                 <p>{{ about.content }}</p>
                 <div class="d-flex d-flex-inline about-image mt-3">
-                    <img class="card-image mb-3" src="{{ about.image }}" alt="{{ about.title }} image" border="0">
+                    <img class="card-image mb-3" src="{{ about.image }}" alt="{{ about.title }} image" loading="lazy" border="0">
                 </div>
                 
             </div>

@@ -90,9 +90,14 @@ main {
     margin-right: 40%;
 }
 
-.about-image {
+.about-image, #logo-footer {
     justify-content: center;
     align-items: center;
+}
+
+#footer-img {
+    margin: 0%;
+    height: 20vh;
 }
 
 .container-content {
