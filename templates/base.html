@@ -36,11 +36,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto py-4 py-lg-0 fit-content">
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-black" href="{% url 'home' %}">Hem</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-black" href="#services">Tjänster</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-black" href="#about">Om oss</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-black text-uppercase" href="{% url 'home' %}">Hem</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-black text-uppercase" href="#services">Tjänster</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-black text-uppercase" href="#about">Om oss</a></li>
                     {% if user.is_superuser %}
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-black" href="">Admin</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-black text-uppercase" href="">Admin</a></li>
                     {% endif %}
                 </ul>
             </div>

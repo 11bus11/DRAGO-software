@@ -93,3 +93,13 @@ main {
 .container-content {
     width: 100vw;
 }
+
+.service-icon {
+    justify-content: center;
+    align-items: center;
+}
+
+.service-cont {
+    background-color: RGBA(255, 255, 255, .4);
+    border-radius: 2%;
+}
