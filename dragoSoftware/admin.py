@@ -4,6 +4,7 @@ from .models import Services, AboutUs
 
 class ServicesAdmin(admin.ModelAdmin):
     list_display = (
+        'nr',
         'name',
         'description',
         'price',
@@ -11,7 +12,7 @@ class ServicesAdmin(admin.ModelAdmin):
     )
 
     ordering = (
-        'name',
+        'nr',
     )
 
 
