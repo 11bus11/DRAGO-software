@@ -9,7 +9,7 @@ body {
 .back-image {
     position: fixed;
     min-width: 100vw;
-    height: 100vh;
+    max-height: 100vh;
     top: 0;
     z-index: -100;
 }
@@ -78,7 +78,7 @@ footer {
 }
 
 main {
-    background-image: url('../background.png');
+    background-image: url("../background.45621f0d6005.png");
 }
 
 .card-image {
