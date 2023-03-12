@@ -2,8 +2,8 @@
 {% load static %}
 
 {% block content %}
-<img class="back-image d-flex d-lg-block d-none" src="https://i.ibb.co/VQpmRmd/masthead-planet.jpg" alt="masthead-planet" border="0">
-<img class="back-image d-flex d-lg-none d-block" src="https://i.ibb.co/hZhptTb/masthead-planet-m.jpg" alt="masthead-planet-m" border="0">
+<img class="back-image d-flex d-md-block d-none" src="https://i.ibb.co/VQpmRmd/masthead-planet.jpg" alt="masthead-planet" border="0">
+<img class="back-image d-flex d-md-none d-block" src="https://i.ibb.co/hZhptTb/masthead-planet-m.jpg" alt="masthead-planet-m" border="0">
 <header class="masthead">
     <div class="container col-12 position-relative px-4 px-lg-5 mx-auto" id="hook-container">
         <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -43,7 +43,7 @@
                 <h2 class="card-title text-center">{{ about.title }}</h2>
                 <p>{{ about.content }}</p>
                 <div class="d-flex d-flex-inline about-image mt-3">
-                    <img class="card-image mb-3" src="{{ about.image }}" alt="{{ about.title }} image" loading="lazy" border="0">
+                    <img class="card-image col-8" src="{{ about.image }}" alt="{{ about.title }} image" loading="lazy" border="0">
                 </div>
                 
             </div>

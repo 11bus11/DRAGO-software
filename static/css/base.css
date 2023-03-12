@@ -8,8 +8,8 @@ body {
 
 .back-image {
     position: fixed;
-    width: 100vw;
-    height: auto;
+    width: auto;
+    height: 100vh;
     top: 0;
     z-index: -100;
 }
