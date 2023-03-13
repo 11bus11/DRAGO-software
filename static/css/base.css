@@ -84,10 +84,11 @@ main {
 .card-image {
     background-color: white;
     border-radius: 2%;
-    width: 20vw;
+    width: 100%;
     height: fit-content;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
 }
 
 .about-image, #logo-footer {
